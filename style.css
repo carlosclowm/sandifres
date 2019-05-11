@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda+One');
+body{
+	font-family: 'Merienda One', cursive;
+}
+header{
+	background-color: #f1f1f1;
+  	padding: 30px;
+}
+nav ul{
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: #333;
+}
+nav li{
+	float: left;
+}
+nav li a{
+	display: block;
+  	color: white;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+}
+.users{
+	position: absolute;
+  	top: 8px;
+  	right: 16px;
+}
+.users a{
+	text-decoration: none;
+	color: black;
+}
+.carrito{
+	position: absolute;
+	top: 70px;
+	right: 50px;
+	font-size: 24px;
+}
+.carrito a{
+	text-decoration: none;
+	color: black;
+}
+.logo{
+  font-size: 35px;
+}
+
+.login{
+	border: 2px solid black;
+ 	border-radius: 5px;
+	text-align: center;
+	margin: 50px auto;
+	width: 242px;
+}
+.logeado{
+	position: absolute;
+	top: 5px;
+	right: 15px;
+}
+.logeado a{
+	text-decoration: none;
+	color: black;
+}
