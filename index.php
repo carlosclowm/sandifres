@@ -15,7 +15,7 @@
 		 ?>
 		<div class="users"><h5><a href="/Ingreso.php">Ingresar</a> | <a href="/Registro.php">Registrarse</a></h5></div>
 	<?php }else{ ?>
-		<div class="logeado"><h5>Bienvenido: <?= $_SESSION['user'] ?> | <a href="/desconectar.php">Cerrar Sesion</a></h5></div>
+		<div class="logeado"><h5>Bienvenido: <?= $_SESSION['nombre'] ?> | <a href="/desconectar.php">Cerrar Sesion</a></h5></div>
 	<?php } ?>
 		<div class="carrito"><span><i class="material-icons">
 shopping_cart
