@@ -9,15 +9,12 @@
 <body>
     <header>
         <div class="users"><h5><a href="/login.php">Ingresar</a> | <a href="/Registro.php">Registrarse</a></h5></div>
-        <div class="carrito"><span><i class="material-icons">
-shopping_cart
-</i></span><a href="#">Carrito (0)</a></div>
         <div class="logo">Sandifres Dresses</div>
 
     </header>
     <nav>
             <ul>
-                <li><a class="active" href="#home">Vestidos</a></li>
+                <li><a class="active" href="/">Vestidos</a></li>
                 <li><a href="#news">Accesorios</a></li>
                 <li><a href="#contact">Informacion</a></li>
                 <li><a href="#about">Galeria</a></li>
@@ -38,6 +35,7 @@ shopping_cart
                 <button type="submit">Ingresar</button>
                 <br>
             </form>
+            <a href="/Registro.php">O Registrarse</a>
         </div>
     </section>
     <footer>

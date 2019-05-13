@@ -16,18 +16,16 @@
 		 ?>
 		<div class="users"><h5><a href="/Ingreso.php">Ingresar</a> | <a href="/Registro.php">Registrarse</a></h5></div>
 	<?php }else{ ?>
-		<div class="logeado"><h5>Bienvenido: <?= $_SESSION['nombre'] ?> | <a href="/desconectar.php">Cerrar Sesion</a></h5></div>
+		<div class="logeado"><h5>Bienvenido: <a href="/perfil.php"><?= $_SESSION['nombre'] ?></a> | <a href="/desconectar.php">Cerrar Sesion</a></h5></div>
+		<div class="carrito"><span><i class="material-icons">shopping_cart</i></span>
+			<a href="/carrito.php">
+				<?php 
+					$sqlCarrito = "SELECT * FROM carrito WHERE id_usuario='".$_SESSION['id']."';";
+					$resCarrito = $conexion->query($sqlCarrito);
+					echo "Carrito (".$resCarrito->num_rows.")";
+				 ?>
+			</a></div>
 	<?php } ?>
-		<div class="carrito"><span><i class="material-icons">
-shopping_cart
-</i></span>
-<a href="/carrito.php">
-	<?php 
-		$sqlCarrito = "SELECT * FROM carrito WHERE id_usuario='".$_SESSION['id']."';";
-		$resCarrito = $conexion->query($sqlCarrito);
-		echo "Carrito (".$resCarrito->num_rows.")";
-	 ?>
-</a></div>
 		<div class="logo">Sandifres Dresses</div>
 
 	</header>
